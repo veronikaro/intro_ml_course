@@ -1,0 +1,13 @@
+numpy
+pandas
+SciPy
+scikit-learn
+scikit-image
+jupyter
+ipykernel
+matplotlib
+pandas-profiling
+torchvision
+torchtext
+tensorboardX
+Cython
