@@ -13,8 +13,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libopenblas-dev python3-pip python3-dev python3-setuptools && \
     pip3 install --upgrade pip
 
-ADD . /app
+RUN pip3 install --upgrade pip
+
 WORKDIR /app
+COPY ./requirements.txt /app/requirements.txt
 
 RUN pip3 install -r requirements.txt
 
